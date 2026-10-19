@@ -17,14 +17,14 @@ export default function Contact() {
 
   return (
     <div className="py-16 px-4 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold text-slate-800 text-center mb-4">Hubungi Kami</h1>
+      <h1 className="text-3xl font-bold text-slate-800 text-center mb-4">Contact Us</h1>
       <p className="text-slate-600 text-center mb-12">Punya pertanyaan atau ingin bekerja sama? Kirimkan pesan kepada kami.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-xl shadow-md border border-slate-100">
         <div>
           <h3 className="text-xl font-bold text-slate-800 mb-4">Informasi Kontak</h3>
           <p className="text-slate-600 mb-2">📍 Jl. Setiabudi No. 123, Bandung, Jawa Barat</p>
-          <p className="text-slate-600 mb-2">📧 info@codecraft.id</p>
+          <p className="text-slate-600 mb-2">📧 info@LuminaryStudio</p>
           <p className="text-slate-600 mb-4">📞 +62 812-3456-7890</p>
 
           <h4 className="font-semibold text-slate-800 mt-6 mb-2">Media Sosial</h4>

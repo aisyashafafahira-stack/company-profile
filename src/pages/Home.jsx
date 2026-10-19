@@ -1,39 +1,71 @@
 import { Link } from 'react-router-dom';
-import { servicesData } from '../data/contentData';
-import Card from '../components/Card';
 
 export default function Home() {
   return (
-    <div>
-      <section className="bg-linear-to-r from-blue-700 to-indigo-900 text-white py-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          {/* Teks utama dibuat putih tebal agar kontras */}
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-white drop-shadow-md">
-            Solusi Digital & Pengembangan Software Terdepan
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="relative pt-20 pb-28 overflow-hidden">
+        {/* Glow Ambient Light */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] adobe-glow-light pointer-events-none -z-10"></div>
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
+            Kreativitas Tanpa Batas dengan{' '}
+            <span className="adobe-gradient-text">
+              Inovasi Kode
+            </span>
           </h1>
-          <p className="text-lg text-blue-100 mb-8 font-medium">
-            Kami membantu mewujudkan ide dan kebutuhan digital Anda melalui teknologi web dan mobile modern.
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed font-normal">
+            Luminary Studio mengintegrasikan keahlian rekayasa perangkat lunak modern untuk menghadirkan platform digital yang elegan, cepat, dan terintegrasi.
           </p>
-          <Link to="/services" className="bg-white text-blue-700 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition inline-block">
-            Lihat Layanan Kami
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link
+              to="/services"
+              className="px-8 py-3.5 rounded-full adobe-btn-primary text-white font-medium hover:shadow-lg hover:shadow-blue-500/25 transition-all hover:-translate-y-0.5"
+            >
+              Jelajahi Layanan
+            </Link>
+            <Link
+              to="/contact"
+              className="px-8 py-3.5 rounded-full bg-gray-100 text-gray-800 font-medium border border-gray-200 hover:bg-gray-200 transition-all hover:-translate-y-0.5"
+            >
+              Hubungi Kami
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-slate-800 mb-4">Tentang CodeCraft.id</h2>
-        <p className="text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          CodeCraft.id adalah perusahaan teknologi informasi yang berfokus pada pembuatan perangkat lunak berkualitas tinggi, desain UI/UX interaktif, serta solusi digital bagi institusi pendidikan dan korporat.
-        </p>
-      </section>
+      {/* Highlights Section */}
+      <section className="py-20 bg-gray-50/80 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#0055fe] flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+              ⚡
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Performa Tinggi</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Arsitektur aplikasi teroptimasi yang memprioritaskan kecepatan akses dan keandalan sistem.
+            </p>
+          </div>
 
-      <section className="bg-slate-50 py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-800 text-center mb-12">Layanan Unggulan</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesData.slice(0, 3).map((service) => (
-              <Card key={service.id} title={service.title} description={service.description} icon={service.icon} />
-            ))}
+          <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-purple-50 text-[#7b2cbf] flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+              🎨
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Desain Murni</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Tampilan antarmuka berstandar industri dengan pengalaman pengguna (*User Experience*) bernilai tinggi.
+            </p>
+          </div>
+
+          <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-red-50 text-[#d90429] flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+              🔒
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Keamanan Terjamin</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Perlindungan data modern berbasis standar enkripsi internasional untuk setiap solusi digital.
+            </p>
           </div>
         </div>
       </section>

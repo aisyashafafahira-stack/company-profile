@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Class untuk Gradasi Teks Adobe */
+.adobe-gradient-text {
+  background: linear-gradient(135deg, #0055fe 0%, #7b2cbfe6 50%, #d90429 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Class untuk Badge Gradasi */
+.adobe-badge {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+/* Custom Class untuk Tombol Utama */
+.adobe-btn-primary {
+  background: linear-gradient(135deg, #0055fe 0%, #7b2cbf 100%);
+}
+
+/* Glow Background Effect */
+.adobe-glow-light {
+  background: radial-gradient(circle, rgba(0, 85, 254, 0.08) 0%, rgba(123, 44, 191, 0.06) 50%, rgba(255, 255, 255, 0) 70%);
+  filter: blur(50px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

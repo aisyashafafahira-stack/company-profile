@@ -3,9 +3,9 @@ export default function About() {
     <div className="py-16 px-4 max-w-7xl mx-auto">
       {/* Sejarah Singkat */}
       <div className="mb-16 text-center max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-slate-800 mb-4">Tentang Kami</h1>
+        <h1 className="text-3xl font-bold text-slate-800 mb-4">About Us</h1>
         <p className="text-slate-600 leading-relaxed">
-          Berawal dari sekumpulan mahasiswa Pendidikan Ilmu Komputer yang memiliki passion tinggi di bidang software engineering, CodeCraft.id kini berkembang menjadi tim profesional yang siap menghadirkan inovasi teknologi terbaik di Indonesia.
+          Berawal dari sekumpulan mahasiswa Pendidikan Ilmu Komputer yang memiliki passion tinggi di bidang software engineering, LuminaryStudio kini berkembang menjadi tim profesional yang siap menghadirkan inovasi teknologi terbaik di Indonesia.
         </p>
       </div>
 

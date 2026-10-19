@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold text-slate-800 mb-4">Portofolio Proyek</h1>
+        <h1 className="text-3xl font-bold text-slate-800 mb-4">Our Portfolio</h1>
         <p className="text-slate-600 max-w-xl mx-auto">
           Hasil karya dan proyek digital unggulan yang sukses kami kembangkan.
         </p>
